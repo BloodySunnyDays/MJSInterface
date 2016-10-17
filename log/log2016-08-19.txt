@@ -1,0 +1,266 @@
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28ï¼šæ›´æ–°å¤±è´¥ã€‚
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+select A_test from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+select A_test from dual 
+UpJosn:{"content": "[{'TICKETFULLNAME': 'ÎÄ²©ÖÐÐÄ', 'TICKETCODE': '1010', 'TRADEID': 28}]", "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+select A_test from dual 
+select A_test from dual 
+select A_test from dual 
+select A_test from dual 
+UpJosn:{"content": "[{'TICKETFULLNAME': '\\xce\\xc4\\xb2\\xa9\\xd6\\xd0\\xd0\\xc4', 'TICKETCODE': '1010', 'TRADEID': 28}]", "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+select A_test from dual 
+select A_test from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+select A_test from dual 
+select A_test from dual 
+select A_test from dual 
+UpJosn:{"content": "[{\"TICKETFULLNAME\": \"ÎÄ²©ÖÐÐÄ\", \"TICKETCODE\": \"1010\", \"TRADEID\": 28}]", "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": "[{\"TICKETFULLNAME\": \"ÎÄ²©ÖÐÐÄ\", \"TICKETCODE\": \"1010\", \"TRADEID\": 28}]", "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": "[{\"TICKETFULLNAME\": \"ÎÄ²©ÖÐÐÄ\", \"TICKETCODE\": \"1010\", \"TRADEID\": 28}]", "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": "[{\"TICKETFULLNAME\": \"ÎÄ²©ÖÐÐÄ\", \"TICKETCODE\": \"1010\", \"TRADEID\": 28}]", "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+select A_test from dual 
+UpJosn:{"content": "[{\"TICKETFULLNAME\": \"ÎÄ²©ÖÐÐÄ\", \"TICKETCODE\": \"1010\", \"TRADEID\": 28}]", "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+select A_test from dual 
+select A_test from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "\u6587\u535a\u4e2d\u5fc3", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28ï¼šæ›´æ–°å¤±è´¥ã€‚
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "ÎÄ²©ÖÐÐÄ", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28¸üÐÂÊ§°Ü

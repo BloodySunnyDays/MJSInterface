@@ -1,0 +1,128 @@
+select ticketupload from dual 
+select ticketupload from dual 
+select ticketupload from dual 
+SQL: select Tradeid,tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0 and tradedate>sysdate-1 and rownum=1) 
+select ticketupload from dual 
+SQL: select Tradeid,tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0 and tradedate>sysdate-1 and rownum=1) 
+select ticketupload from dual 
+SQL: select Tradeid,tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0 and tradedate>sysdate-1 and rownum=1) 
+select ticketupload from dual 
+SQL: select Tradeid,tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0 and tradedate>sysdate-1 and rownum=1) 
+select ticketupload from dual 
+SQL: select Tradeid,tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0 and tradedate>sysdate-1 and rownum=1) 
+select ticketupload from dual 
+SQL: select Tradeid,tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0 and tradedate>sysdate-1 and rownum=1) 
+select ticketupload from dual 
+SQL: select Tradeid,tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+select ticketupload from dual 
+SQL: select Tradeid,tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+select ticketupload from dual 
+SQL: select Tradeid,to_char(tradedate,'yyyy-mm-dd hh:ni:ss'),ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+select ticketupload from dual 
+SQL: select Tradeid,to_char(tradedate,'yyyy-mm-dd hh:ni:ss'),ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+select ticketupload from dual 
+select ticketupload from dual 
+SQL: select Tradeid,to_char(tradedate,'yyyy-mm-dd hh24:mi:ss'),ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+select ticketupload from dual 
+SQL: select Tradeid,to_char(tradedate,'yyyy-mm-dd hh24:mi:ss') as tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+UpJosn:{"content": [{"TICKETMODELPRICE": 100.0, "PAYSUM": 2000.0, "TICKETCOUNT": 20, "TRADEID": "000100001219", "TRADEDATE": "2016-05-20 11:37:04"}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'9001', u'data': u'', u'success': False}
+2001：传输失败。交易号：000100001219
+select ticketupload from dual 
+SQL: select Tradeid,to_char(tradedate,'yyyy-mm-dd hh24:mi:ss') as tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+UpJosn:{"content": [{"TICKETMODELPRICE": 100.0, "PAYSUM": 2000.0, "TICKETCOUNT": 20, "TRADEID": "000100001219", "TRADEDATE": "2016-05-20 11:37:04"}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select ticketupload from dual 
+SQL: select Tradeid,to_char(tradedate,'yyyy-mm-dd hh24:mi:ss') as tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+UpJosn:{"content": [{"TICKETMODELPRICE": 100.0, "PAYSUM": 2000.0, "TICKETCOUNT": 20, "TRADEID": "000100001219", "TRADEDATE": "2016-05-20 11:37:04"}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+select ticketupload from dual 
+SQL: select Tradeid,to_char(tradedate,'yyyy-mm-dd hh24:mi:ss') as tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+UpJosn:{"content": [{"TICKETMODELPRICE": 100.0, "PAYSUM": 2000.0, "TICKETCOUNT": 20, "TRADEID": "000100001219", "TRADEDATE": "2016-05-20 11:37:04"}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select ticketupload_confirm(000100001219) from dual 
+select ticketupload from dual 
+SQL: select Tradeid,to_char(tradedate,'yyyy-mm-dd hh24:mi:ss') as tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+UpJosn:{"content": [{"TICKETMODELPRICE": 100.0, "PAYSUM": 2000.0, "TICKETCOUNT": 20, "TRADEID": "000100001219", "TRADEDATE": "2016-05-20 11:37:04"}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select ticketupload_confirm(000100001219) from dual 
+SQL: update tkt_trademain set transflag = 1 where tradeid = 100001219
+select ticketupload from dual 
+SQL: select Tradeid,to_char(tradedate,'yyyy-mm-dd hh24:mi:ss') as tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+UpJosn:{"content": [{"TICKETMODELPRICE": 100.0, "PAYSUM": 2000.0, "TICKETCOUNT": 20, "TRADEID": "000100001219", "TRADEDATE": "2016-05-20 11:37:04"}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select ticketupload_confirm(000100001219) from dual 
+select ticketupload from dual 
+SQL: select Tradeid,to_char(tradedate,'yyyy-mm-dd hh24:mi:ss') as tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+UpJosn:{"content": [{"TICKETMODELPRICE": 100.0, "PAYSUM": 2000.0, "TICKETCOUNT": 20, "TRADEID": "000100001219", "TRADEDATE": "2016-05-20 11:37:04"}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select ticketupload_confirm(000100001219) from dual 
+SQL: update tkt_trademain set transflag = 1 where tradeid = 000100001219
+000100001219：更新成功。
+select ticketcheckupload from dual 
+SQL: select barcode as Tradeid,to_char(min(usetime),'yyyy-mm-dd hh24:mi:ss') as usetime,10000 as maxnum,ticketmodelname,usercount
+                       from tkt_checkdetail
+                       where barcode = (select barcode from tkt_checkdetail where transflag=0 and leftcount=0 and usetime>sysdate-1 and rownum=1)
+                       group by barcode,ticketmodelname,usercount 
+select ticketupload from dual 
+SQL: select Tradeid,to_char(tradedate,'yyyy-mm-dd hh24:mi:ss') as tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+UpJosn:{"content": [{"TICKETMODELPRICE": 100.0, "PAYSUM": 5000.0, "TICKETCOUNT": 50, "TRADEID": "000100001220", "TRADEDATE": "2016-05-20 11:37:26"}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select ticketupload_confirm(000100001220) from dual 
+SQL: update tkt_trademain set transflag = 1 where tradeid = 000100001220
+000100001220：更新成功。
+select ticketcheckupload from dual 
+SQL: select barcode as Tradeid,to_char(min(usetime),'yyyy-mm-dd hh24:mi:ss') as usetime,10000 as maxnum,ticketmodelname,usercount
+                       from tkt_checkdetail
+                       where barcode = (select barcode from tkt_checkdetail where transflag=0 and leftcount=0 and usetime>sysdate-1 and rownum=1)
+                       group by barcode,ticketmodelname,usercount 
+select ticketupload from dual 
+select ticketupload from dual 
+SQL: select Tradeid,to_char(tradedate,'yyyy-mm-dd hh24:mi:ss') as tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+select ticketupload from dual 
+SQL: select Tradeid,to_char(tradedate,'yyyy-mm-dd hh24:mi:ss') as tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+select ticketupload from dual 
+SQL: select Tradeid,to_char(tradedate,'yyyy-mm-dd hh24:mi:ss') as tradedate,ticketmodelprice,ticketcount,paysum
+                       from tkt_tradedetail
+                       where tradeid = (select tradeid from tkt_trademain where transflag=0  and rownum=1) 
+UpJosn:{"content": [{"TICKETMODELPRICE": 100.0, "PAYSUM": 2000.0, "TICKETCOUNT": 20, "TRADEID": "000100001219", "TRADEDATE": "2016-05-20 11:37:04"}], "infoCode": "2001", "scenicCode": "GS5A0001"}

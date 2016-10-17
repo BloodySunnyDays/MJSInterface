@@ -1,0 +1,26 @@
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "文博中心", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28更新失败
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "文博中心", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28更新失败
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "文博中心", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28更新失败
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "文博中心", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "3001", "scenicCode": "GS5A0001"}
+BackTrans:3001:{u'msg': u'3002', u'data': u'', u'success': True}
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "文博中心", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "2001", "scenicCode": "GS5A0001"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+select B_test(28) from dual 
+28更新失败
+select A_test from dual 
+UpJosn:{"content": [{"TICKETFULLNAME": "文博中心", "TICKETCODE": "1010", "TRADEID": 28}], "infoCode": "3001", "scenicCode": "GS5A0001"}
+BackTrans:3001:{u'msg': u'3002', u'data': u'', u'success': True}

@@ -1,0 +1,214 @@
+DECLARE @RetMess varchar exec WebService_AddMoney @RetMess OUTPUT SELECT @RetMess 
+DECLARE @RetMess varchar exec WebService_AddMoney @RetMess OUTPUT SELECT @RetMess 
+DECLARE @RetMess varchar exec WebService_AddMoney @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid,CONVERT(varCHAR(20), tradedate,112) as tradedate,ticketmodelprice,ticketcount,paysum 
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+DECLARE @RetMess varchar exec WebService_AddMoney @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid,CONVERT(varCHAR(20), tradedate,112) as tradedate,ticketmodelprice,ticketcount,paysum 
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+DECLARE @RetMess varchar exec WebService_AddMoney @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid,CONVERT(varCHAR(20), tradedate,112) as tradedate,ticketmodelprice,ticketcount,paysum 
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+DECLARE @RetMess varchar exec WebService_AddMoney @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,112) as tradedate,ticketmodelprice,ticketcount,paysum 
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+DECLARE @RetMess varchar exec WebService_AddMoney @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,112) as tradedate,ticketmodelprice,ticketcount,paysum 
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+DECLARE @RetMess varchar exec WebService_AddMoney @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,112) as tradedate,ticketmodelprice,ticketcount,paysum 
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+DECLARE @RetMess varchar exec WebService_AddMoney @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,120) as tradedate,
+												convert(varchar(10),ticketmodelprice) AS ticketmodelprice,
+												ticketcount,convert(varchar(10),paysum) AS paysum
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+UpJosn:{"content": [{"paysum": "800.00", "ticketmodelprice": "100.00", "ticketcount": 8, "TRADEID": 583890, "tradedate": "2015-11-04 16:30:33"}], "infoCode": "2001", "scenicCode": "GS5A0002"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+DECLARE @RetMess varchar exec ticketupload_confirm "583890" @RetMess OUTPUT SELECT @RetMess 
+DECLARE @RetMess varchar exec ticketupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,120) as tradedate,
+												convert(varchar(10),ticketmodelprice) AS ticketmodelprice,
+												ticketcount,convert(varchar(10),paysum) AS paysum
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+UpJosn:{"content": [{"paysum": "50.00", "ticketmodelprice": "50.00", "ticketcount": 1, "TRADEID": 583894, "tradedate": "2015-11-04 16:34:42"}], "infoCode": "2001", "scenicCode": "GS5A0002"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+DECLARE @RetMess varchar exec ticketupload_confirm "583894" @RetMess OUTPUT SELECT @RetMess 
+SQL: update tkt_trademain set transflag = 1 where tradeid = 583894
+583894：更新成功。
+DECLARE @RetMess varchar exec ticketcheckupload @RetMess OUTPUT SELECT @RetMess 
+DECLARE @RetMess varchar exec ticketupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,120) as tradedate,
+												convert(varchar(10),ticketmodelprice) AS ticketmodelprice,
+												ticketcount,convert(varchar(10),paysum) AS paysum
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+UpJosn:{"content": [{"paysum": "50.00", "ticketmodelprice": "50.00", "ticketcount": 1, "TRADEID": 583897, "tradedate": "2015-11-05 16:57:07"}], "infoCode": "2001", "scenicCode": "GS5A0002"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+DECLARE @RetMess varchar exec ticketupload_confirm "583897" @RetMess OUTPUT SELECT @RetMess 
+SQL: update tkt_trademain set transflag = 1 where tradeid = 583897
+583897：更新成功。
+DECLARE @RetMess varchar exec ticketcheckupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select a.barcode as TRADEID,CONVERT(varCHAR(20),a.usetime,120) as usetime,20000 as maxnum,b.ticketmodelname,a.usercount
+					from tkt_checkdetail a ,Sys_TicketModel b
+					where a.ticketmodel=b.ticketmodelcode and a.barcode = (select top 1 barcode from tkt_checkdetail where  usetime>(getdate()-100))
+					group by a.barcode,a.usetime,b.ticketmodelname,a.usercount 
+DECLARE @RetMess varchar exec ticketupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,120) as tradedate,
+												convert(varchar(10),ticketmodelprice) AS ticketmodelprice,
+												ticketcount,convert(varchar(10),paysum) AS paysum
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+UpJosn:{"content": [{"paysum": "50.00", "ticketmodelprice": "50.00", "ticketcount": 1, "TRADEID": 583897, "tradedate": "2015-11-05 16:57:07"}], "infoCode": "2001", "scenicCode": "GS5A0002"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+DECLARE @RetMess varchar exec ticketupload_confirm "583897" @RetMess OUTPUT SELECT @RetMess 
+SQL: update tkt_trademain set transflag = 1 where tradeid = 583897
+583897：更新成功。
+DECLARE @RetMess varchar exec ticketcheckupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select a.barcode as TRADEID,CONVERT(varCHAR(20),a.usetime,120) as usetime,20000 as maxnum,b.ticketmodelname,a.usercount
+					from tkt_checkdetail a ,Sys_TicketModel b
+					where a.ticketmodel=b.ticketmodelcode and a.barcode = (select top 1 barcode from tkt_checkdetail where  usetime>(getdate()-100))
+					group by a.barcode,a.usetime,b.ticketmodelname,a.usercount 
+DECLARE @RetMess varchar exec ticketupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,120) as tradedate,
+												convert(varchar(10),ticketmodelprice) AS ticketmodelprice,
+												ticketcount,convert(varchar(10),paysum) AS paysum
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+UpJosn:{"content": [{"paysum": "50.00", "ticketmodelprice": "50.00", "ticketcount": 1, "TRADEID": 583897, "tradedate": "2015-11-05 16:57:07"}], "infoCode": "2001", "scenicCode": "GS5A0002"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+DECLARE @RetMess varchar exec ticketupload_confirm "583897" @RetMess OUTPUT SELECT @RetMess 
+SQL: update tkt_trademain set transflag = 1 where tradeid = 583897
+583897：更新成功。
+DECLARE @RetMess varchar exec ticketcheckupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select a.barcode as TRADEID,CONVERT(varCHAR(20),a.usetime,120) as usetime,20000 as maxnum,
+					CONVERT(VARCHAR(32),b.ticketmodelname),a.usercount
+					from tkt_checkdetail a ,Sys_TicketModel b
+					where a.ticketmodel=b.ticketmodelcode and a.barcode = (select top 1 barcode from tkt_checkdetail where  usetime>(getdate()-100))
+					group by a.barcode,a.usetime,b.ticketmodelname,a.usercount 
+DECLARE @RetMess varchar exec ticketupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,120) as tradedate,
+												convert(varchar(10),ticketmodelprice) AS ticketmodelprice,
+												ticketcount,convert(varchar(10),paysum) AS paysum
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+UpJosn:{"content": [{"paysum": "50.00", "ticketmodelprice": "50.00", "ticketcount": 1, "TRADEID": 583897, "tradedate": "2015-11-05 16:57:07"}], "infoCode": "2001", "scenicCode": "GS5A0002"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+DECLARE @RetMess varchar exec ticketupload_confirm "583897" @RetMess OUTPUT SELECT @RetMess 
+SQL: update tkt_trademain set transflag = 1 where tradeid = 583897
+583897：更新成功。
+DECLARE @RetMess varchar exec ticketcheckupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select a.barcode as TRADEID,CONVERT(varCHAR(20),a.usetime,120) as usetime,20000 as maxnum,
+					CONVERT(VARCHAR(32),b.ticketmodelname)as ticketmodelname,a.usercount
+					from tkt_checkdetail a ,Sys_TicketModel b
+					where a.ticketmodel=b.ticketmodelcode and a.barcode = (select top 1 barcode from tkt_checkdetail where  usetime>(getdate()-100))
+					group by a.barcode,a.usetime,b.ticketmodelname,a.usercount 
+DECLARE @RetMess varchar exec ticketupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,120) as tradedate,
+												convert(varchar(10),ticketmodelprice) AS ticketmodelprice,
+												ticketcount,convert(varchar(10),paysum) AS paysum
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+UpJosn:{"content": [{"paysum": "50.00", "ticketmodelprice": "50.00", "ticketcount": 1, "TRADEID": 583897, "tradedate": "2015-11-05 16:57:07"}], "infoCode": "2001", "scenicCode": "GS5A0002"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+DECLARE @RetMess varchar exec ticketupload_confirm "583897" @RetMess OUTPUT SELECT @RetMess 
+SQL: update tkt_trademain set transflag = 1 where tradeid = 583897
+583897：更新成功。
+DECLARE @RetMess varchar exec ticketcheckupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select a.barcode as TRADEID,CONVERT(varCHAR(20),a.usetime,120) as usetime,20000 as maxnum,
+					REPLACE(b.ticketmodelname, '-', '') as ticketmodelname,a.usercount
+					from tkt_checkdetail a ,Sys_TicketModel b
+					where a.ticketmodel=b.ticketmodelcode and  a.barcode = (select top 1 barcode from tkt_checkdetail where  usetime>(getdate()-100))
+					group by a.barcode,a.usetime,b.ticketmodelname,a.usercount  
+DECLARE @RetMess varchar exec ticketupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,120) as tradedate,
+												convert(varchar(10),ticketmodelprice) AS ticketmodelprice,
+												ticketcount,convert(varchar(10),paysum) AS paysum
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+UpJosn:{"content": [{"paysum": "50.00", "ticketmodelprice": "50.00", "ticketcount": 1, "TRADEID": 583897, "tradedate": "2015-11-05 16:57:07"}], "infoCode": "2001", "scenicCode": "GS5A0002"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+DECLARE @RetMess varchar exec ticketupload_confirm "583897" @RetMess OUTPUT SELECT @RetMess 
+SQL: update tkt_trademain set transflag = 1 where tradeid = 583897
+583897：更新成功。
+DECLARE @RetMess varchar exec ticketcheckupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select a.barcode as TRADEID,CONVERT(varCHAR(20),a.usetime,120) as usetime,20000 as maxnum,
+					b.ticketmodelname,a.usercount
+					from tkt_checkdetail a ,Sys_TicketModel b
+					where a.ticketmodel=b.ticketmodelcode and  a.barcode = (select top 1 barcode from tkt_checkdetail where  usetime>(getdate()-100))
+					group by a.barcode,a.usetime,b.ticketmodelname,a.usercount  
+DECLARE @RetMess varchar exec ticketupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,120) as tradedate,
+												convert(varchar(10),ticketmodelprice) AS ticketmodelprice,
+												ticketcount,convert(varchar(10),paysum) AS paysum
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+UpJosn:{"content": [{"paysum": "50.00", "ticketmodelprice": "50.00", "ticketcount": 1, "TRADEID": 583897, "tradedate": "2015-11-05 16:57:07"}], "infoCode": "2001", "scenicCode": "GS5A0002"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+DECLARE @RetMess varchar exec ticketupload_confirm "583897" @RetMess OUTPUT SELECT @RetMess 
+SQL: update tkt_trademain set transflag = 1 where tradeid = 583897
+583897：更新成功。
+DECLARE @RetMess varchar exec ticketcheckupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select a.barcode as TRADEID,CONVERT(varCHAR(20),a.usetime,120) as usetime,20000 as maxnum,
+					CONVERT(varCHAR(32),b.ticketmodelname) as ticketmodelname, a.usercount
+					from tkt_checkdetail a ,Sys_TicketModel b
+					where a.ticketmodel=b.ticketmodelcode and  a.barcode = (select top 1 barcode from tkt_checkdetail where  usetime>(getdate()-100))
+					group by a.barcode,a.usetime,b.ticketmodelname,a.usercount  
+DECLARE @RetMess varchar exec ticketupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,120) as tradedate,
+												convert(varchar(10),ticketmodelprice) AS ticketmodelprice,
+												ticketcount,convert(varchar(10),paysum) AS paysum
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+UpJosn:{"content": [{"paysum": "50.00", "ticketmodelprice": "50.00", "ticketcount": 1, "TRADEID": 583897, "tradedate": "2015-11-05 16:57:07"}], "infoCode": "2001", "scenicCode": "GS5A0002"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+DECLARE @RetMess varchar exec ticketupload_confirm "583897" @RetMess OUTPUT SELECT @RetMess 
+SQL: update tkt_trademain set transflag = 1 where tradeid = 583897
+583897：更新成功。
+DECLARE @RetMess varchar exec ticketcheckupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select a.barcode as TRADEID,CONVERT(varCHAR(20),a.usetime,120) as usetime,20000 as maxnum,
+					CONVERT(varCHAR(32),b.ticketmodelname) as ticketmodelname, a.usercount
+					from tkt_checkdetail a ,Sys_TicketModel b
+					where a.ticketmodel=b.ticketmodelcode and  a.barcode = (select top 1 barcode from tkt_checkdetail where  usetime>(getdate()-100))
+					group by a.barcode,a.usetime,b.ticketmodelname,a.usercount  
+UpJosn:{"content": [{"usetime": "2016-08-09 17:17:52", "usercount": 1, "maxnum": 20000, "TRADEID": "ET160809000100000022", "ticketmodelname": "13-长城第一墩全票"}], "infoCode": "3001", "scenicCode": "GS5A0002"}
+BackTrans:3001:{u'msg': u'3002', u'data': u'', u'success': True}
+DECLARE @RetMess varchar exec ticketcheckupload_confirm "ET160809000100000022" @RetMess OUTPUT SELECT @RetMess 
+SQL: update tkt_checkdetail set transflag = 1 where barcode = ET160809000100000022
+DECLARE @RetMess varchar exec ticketupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,120) as tradedate,
+												convert(varchar(10),ticketmodelprice) AS ticketmodelprice,
+												ticketcount,convert(varchar(10),paysum) AS paysum
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+UpJosn:{"content": [{"paysum": "50.00", "ticketmodelprice": "50.00", "ticketcount": 1, "TRADEID": 583897, "tradedate": "2015-11-05 16:57:07"}], "infoCode": "2001", "scenicCode": "GS5A0002"}
+BackTrans:2001:{u'msg': u'2002', u'data': u'', u'success': True}
+DECLARE @RetMess varchar exec ticketupload_confirm "583897" @RetMess OUTPUT SELECT @RetMess 
+SQL: update tkt_trademain set transflag = 1 where tradeid = 583897
+583897：更新成功。
+DECLARE @RetMess varchar exec ticketcheckupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select a.barcode as TRADEID,CONVERT(varCHAR(20),a.usetime,120) as usetime,20000 as maxnum,
+					CONVERT(varCHAR(32),b.ticketmodelname) as ticketmodelname, a.usercount
+					from tkt_checkdetail a ,Sys_TicketModel b
+					where a.ticketmodel=b.ticketmodelcode and  a.barcode = (select top 1 barcode from tkt_checkdetail where  usetime>(getdate()-100))
+					group by a.barcode,a.usetime,b.ticketmodelname,a.usercount  
+UpJosn:{"content": [{"usetime": "2016-08-09 17:17:52", "usercount": 1, "maxnum": 20000, "TRADEID": "ET160809000100000022", "ticketmodelname": "13-长城第一墩全票"}], "infoCode": "3001", "scenicCode": "GS5A0002"}
+BackTrans:3001:{u'msg': u'3002', u'data': u'', u'success': True}
+DECLARE @RetMess varchar exec ticketcheckupload_confirm "ET160809000100000022" @RetMess OUTPUT SELECT @RetMess 
+SQL: update tkt_checkdetail set transflag = 1 where barcode = 'ET160809000100000022'
+ET160809000100000022：更新成功。
+DECLARE @RetMess varchar exec ticketupload @RetMess OUTPUT SELECT @RetMess 
+SQL: select Tradeid as TRADEID,CONVERT(varCHAR(20), tradedate,120) as tradedate,
+												convert(varchar(10),ticketmodelprice) AS ticketmodelprice,
+												ticketcount,convert(varchar(10),paysum) AS paysum
+                       from tkt_tradedetail 
+                       where tradeid = (select top 1  tradeid from tkt_trademain where isnull(transflag,0)=1 and tradedate>GETDATE()-300) 
+UpJosn:{"content": [{"paysum": "50.00", "ticketmodelprice": "50.00", "ticketcount": 1, "TRADEID": 583897, "tradedate": "2015-11-05 16:57:07"}], "infoCode": "2001", "scenicCode": "GS5A0002"}
