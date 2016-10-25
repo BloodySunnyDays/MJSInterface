@@ -73,7 +73,7 @@ def createWidgets():
     Frame1=Frame(root,height = 200,width = 200)
     Frame1.grid(sticky=W)
 
-    Label7 = Label(Frame1, text='(V5)类型说明:')
+    Label7 = Label(Frame1, text='(V1025)类型说明:')
     Label7.grid(row=nRow,column=0,)
     Label7 = Label(Frame1, text='(0:oracle  / 1:SQL)')
     Label7.grid(row=nRow,column=1,)
@@ -277,13 +277,13 @@ def StartUpLoad(LabMess):
     if Fconnet ==False:
         LabMess['text'] = '请先连接数据库。。'
 
-    fname = 'log'+str(datetime.date.today()) + '.txt'
-    sDir = cur_file_dir() + '\\log\\'+fname
 
     while Fconnet==True:
         LabMess['text'] = '等待'+str(sSleepTime)+'秒..'
         time.sleep(int(sSleepTime))
         LabMess['text'] = '开始上传..'
+        fname = 'log'+str(datetime.date.today()) + '.txt'
+        sDir = cur_file_dir() + '\\log\\'+fname
         try:
             for option,value in config.items('infoCode'):
                 if (option <> '1001') and (option[3:4]=='1') and(value <> ''):
@@ -348,6 +348,7 @@ def StartUpLoad(LabMess):
                         request = urllib2.Request(varWebSerIp.get(),data) #构造Requset
                         response = urllib2.urlopen(request)
 
+
                         data_string = response.read()
                         obj_json =  json.loads(data_string)
                         Amsg = obj_json['msg']
@@ -409,9 +410,19 @@ def StartUpLoad(LabMess):
                     else:
                         LabMess['text'] = option + '：没有数据需要更新。'
                         time.sleep(0.3)
-
-        except:
+        except urllib2.URLError,e:
+            if hasattr(e,"reason"):
+                with open(sDir, 'a') as f:
+                        f.write(str(e.reason) + str(option) + u'：传输失败。交易号：'.encode('gbk')+ str(Tradeid) +'\n')
+            elif hasattr(e,"code"):
+                with open(sDir, 'a') as f:
+                        f.write(str(e.code) + str(option) + u'：传输失败。交易号：'.encode('gbk')+ str(Tradeid) +'\n')
             continue
+        else:
+            continue
+
+
+
             # Fconnet = False
             # return '数据提交失败'
 
