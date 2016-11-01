@@ -404,22 +404,23 @@ def StartUpLoad(LabMess):
                         else:
                             LabMess['text'] = option + '：传输失败。'
                             time.sleep(0.5)
-                            Fconnet = False
+                            # Fconnet = False
                             with open(sDir, 'a') as f:
                                     f.write(str(option) + u'：传输失败。交易号：'.encode('gbk')+ str(Tradeid) +'\n')
+                            continue
                     else:
                         LabMess['text'] = option + '：没有数据需要更新。'
                         time.sleep(0.3)
-        except urllib2.URLError,e:
-            if hasattr(e,"reason"):
-                with open(sDir, 'a') as f:
-                        f.write(str(e.reason) + str(option) + u'：传输失败。交易号：'.encode('gbk')+ str(Tradeid) +'\n')
-            elif hasattr(e,"code"):
-                with open(sDir, 'a') as f:
-                        f.write(str(e.code) + str(option) + u'：传输失败。交易号：'.encode('gbk')+ str(Tradeid) +'\n')
+        except:
             continue
-        else:
-            continue
+        # except urllib2.URLError,e:
+        #     if hasattr(e,"reason"):
+        #         with open(sDir, 'a') as f:
+        #                 f.write(str(e.reason) + str(option) + u'：传输失败。交易号：'.encode('gbk')+ str(Tradeid) +'\n')
+        #     elif hasattr(e,"code"):
+        #         with open(sDir, 'a') as f:
+        #                 f.write(str(e.code) + str(option) + u'：传输失败。交易号：'.encode('gbk')+ str(Tradeid) +'\n')
+        #     continue
 
 
 
