@@ -68,7 +68,10 @@ def center_window(w=600, h=200):
     y = (hs/2) - (h/2)
     root.geometry('%dx%d+%d+%d' % (w, h, x, y))
 
+
+
 def createWidgets():
+    global LabMess
     nRow = 0
     Frame1=Frame(root,height = 200,width = 200)
     Frame1.grid(sticky=W)
@@ -189,6 +192,7 @@ def keyPress(a):
 def Quit():
     global Fconnet
     Fconnet = False
+    root.destroy()
     root.quit()
 
 def SaveProc():
@@ -466,5 +470,7 @@ root.title('GSPostDate')
 root.resizable(False, False)
 # 主消息循环:
 
-
+TestDBConnet(LabMess)
+if Fconnet:
+    Thread_SaveLoad(LabMess)
 root.mainloop()
