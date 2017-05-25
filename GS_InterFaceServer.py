@@ -14,6 +14,8 @@ import time
 import threading
 from Tkinter import  Frame,Label,Tk,Entry,Button,StringVar,W,N
 from ttk     import  Combobox
+import ctypes
+import inspect
 
 # 准备数据
 
@@ -37,6 +39,7 @@ sDBType    = config.get('conn', 'DBType')
 sParkCode  = config.get('conn', 'ParkCode')
 sSleepTime = config.get('conn', 'sleeptime')
 sFormatJson= config.get('conn', 'formatjson')
+sShowWinRun= config.get('conn', 'showrun')
 
 def GetinfoCode():
     DcinfoCode = config.options("infoCode")
@@ -188,12 +191,27 @@ def keyPress(a):
     except ValueError:
         varSleeptime.set('')
 
+def _async_raise(tid, exctype):
+    """raises the exception, performs cleanup if needed"""
+    tid = ctypes.c_long(tid)
+    if not inspect.isclass(exctype):
+        exctype = type(exctype)
+    res = ctypes.pythonapi.PyThreadState_SetAsyncExc(tid, ctypes.py_object(exctype))
+    if res == 0:
+        raise ValueError("invalid thread id")
+    elif res != 1:
+        # """if it returns a number greater than one, you're in trouble,
+        # and you should call it again with exc=NULL to revert the effect"""
+        ctypes.pythonapi.PyThreadState_SetAsyncExc(tid, None)
+        raise SystemError("PyThreadState_SetAsyncExc failed")
+
 
 def Quit():
     global Fconnet
     Fconnet = False
-    root.destroy()
+    _async_raise(t.ident,SystemExit)
     root.quit()
+    root.destroy()
 
 def SaveProc():
     config.set('infoCode',str(varinfoCode.get()),str(varProc.get()))
@@ -432,6 +450,7 @@ def StartUpLoad(LabMess):
             # return '数据提交失败'
 
 def Thread_SaveLoad(LabMess):
+    global t
     t = threading.Thread(target=StartUpLoad,args=(LabMess,))
     t.start()
 
@@ -470,7 +489,8 @@ root.title('GSPostDate')
 root.resizable(False, False)
 # 主消息循环:
 
-TestDBConnet(LabMess)
-if Fconnet:
-    Thread_SaveLoad(LabMess)
+if sShowWinRun =='1':
+    TestDBConnet(LabMess)
+    if Fconnet:
+        Thread_SaveLoad(LabMess)
 root.mainloop()
